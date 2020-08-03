@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Jeff's Website">
+  <meta name="author" content="Jeff Coulter">
+  <title>Jeff Coulter | About</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <meta name="theme-color" content="#4B9CD3">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ec6b22919c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #4B9CD3;">
+      <a class="navbar-brand" href="/">
+       <span id="jdc">JDC</span>
+     </a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="investments.html">Investments</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main role="main">
+
+  <div class="container marketing top-margin" >
+  	<h1 class="center-text heading">About Me</h1>
+  	<div class="row">
+  		<div class="col-lg-8 aboutdiv">
+  			<p class="center-text">I'm an investor and entrepreneur with over 10 years of experience buying, managing, investing, and divesting companies of all sizes. I spent 6 years in investment banking and private equity before leaving to invest my own capital. I invest across industries, mostly looking for overlooked and undervalued companies with proprietary technology. I'm also a self-taught full-stack developer. I graduated from the University of North Carolina at Chapel Hill with a BS in Business Administration in 2008.<br><br>
+         As of July 2020 I live with my partner Mike and dog Boomer in Paris, France. We plan to move soon to Sydney, Australia once the Covid-19 pandemic has subsided. I'm an avid long-distance runner, having completed 19 marathons (and counting), with a personal best of 2:42:52 at the 2019 Donostia / San Sebastian Marathon in Spain. I love hiking and traveling to less-popular destinations. Ask me about my favorite trip!
+       </div>
+       <div class="col-lg-4">
+         <img src="images/switzerland2.jpg" alt="At a wedding in Switzerland" height="600px">
+       </div>
+     </div>
+     <hr class="featurette-divider">
+     
+     <div class="row">
+       <div class="col-lg-6">
+         <img src="images/sansebastian.jpg" alt="With Andrew at the finish line of the San Sebastian Marathon" height="500px">
+       </div>
+       <div class="col-lg-6">
+        <h1 class="center-text heading">Racing Log</h1>
+        <p class="center-text">Choose a category from the dropdown below to see a (partial) list of the races I've run!</p>
+        <label for="racedropdown">Select a Distance</label>
+        <div class="box">
+          <select name="racedropdown" id="racedropdown" onchange="tableSelector()">
+            <option value="marathon">Full Marathon</option>
+            <option value="half">Half Marathon</option>
+            <option value="10km">10KM</option>
+            <option value="5km">5KM</option>
+            <option value="other">Other</option>
+          </select>
+        </div>      
+      </div>
+    </div>
+
+    <h2 class="center-text" id="table-heading">Full Marathons</h2>
+    <div id="legend"><span>Trail Race</span></div>
+    <div class="table-responsive" id="tablecontainer">
+    <table class="table table-hover" id="marathontable">
+      <caption>A list of marathons completed with finish time and overall place.</caption>
+      <thead>
+        <tr>
+          <th scope="col">Date (MM/DD/YY)</th>
+          <th scope="col">Race</th>
+          <th scope="col">Time (H:MM:SS)</th>
+          <th scope="col">Overall Place</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>11/24/19</td>
+          <td>2019 Donostia-San Sebastian Marathon</td>
+          <td>2:42:52</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>11/11/18</td>
+          <td>2018 Athens Marathon</td>
+          <td>2:58:03</td>
+          <td>126</td>
+        </tr>
+        <tr>
+          <td>09/16/18</td>
+          <td>2018 Berlin Marathon</td>
+          <td>2:47:57</td>
+          <td>603</td>
+        </tr>
+        <tr>
+          <td>04/08/18</td>
+          <td>2018 Paris Marathon</td>
+          <td>2:56:36</td>
+          <td>654</td>
+        </tr>
+        <tr>
+          <td>04/17/17</td>
+          <td>2017 Boston Marathon</td>
+          <td>2:58:00</td>
+          <td>1,189</td>
+        </tr>
+        <tr>
+          <td>07/31/16</td>
+          <td>2016 San Francisco Marathon</td>
+          <td>3:14:09</td>
+          <td>193</td>
+        </tr>
+        <tr class="table-info">
+          <td>06/12/16</td>
+          <td>2016 Big Basin Marathon</td>
+          <td>4:05:57</td>
+          <td>11</td>
+        </tr>
+        <tr>
+          <td>04/18/16</td>
+          <td>2016 Boston Marathon</td>
+          <td>3:01:46</td>
+          <td>1,687</td>
+        </tr>
+        <tr class="table-info">
+          <td>12/05/15</td>
+          <td>2015 North Face Endurance Challenge</td>
+          <td>4:10:35</td>
+          <td>28</td>
+        </tr>
+        <tr>
+          <td>11/02/14</td>
+          <td>2014 New York City Marathon</td>
+          <td>2:57:24</td>
+          <td>527</td>
+        </tr>
+        <tr>
+          <td>03/02/14</td>
+          <td>2014 Little Rock Marathon</td>
+          <td>3:14:32</td>
+          <td>63</td>
+        </tr>
+        <tr>
+          <td colspan="4">More to Come...</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="table table-hover" id="halfmarathontable">
+      <caption>A list of half marathons completed with finish time and overall place.</caption>
+      <thead>
+        <tr>
+          <th scope="col">Date (MM/DD/YY)</th>
+          <th scope="col">Race</th>
+          <th scope="col">Time (H:MM:SS)</th>
+          <th scope="col">Overall Place</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>03/04/18</td>
+          <td>2019 Harmonie Mutuelle Semi de Paris</td>
+          <td>1:16:48</td>
+          <td>113</td>
+        </tr>
+        <tr>
+          <td>03/04/18</td>
+          <td>2018 Fitbit Semi de Paris</td>
+          <td>1:18:18</td>
+          <td>228</td>
+        </tr>
+        <tr>
+          <td colspan="4">More to Come...</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="table table-hover" id="km10table">
+      <caption>A list of 10km races completed with finish time and overall place.</caption>
+      <thead>
+        <tr>
+          <th scope="col">Date (MM/DD/YY)</th>
+          <th scope="col">Race</th>
+          <th scope="col">Time (MM:SS)</th>
+          <th scope="col">Overall Place</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>11/26/17</td>
+          <td>2017 Boucles du 17ème Arr de Paris</td>
+          <td>37:08</td>
+          <td>89</td>
+        </tr>
+        <tr>
+          <td>11/13/16</td>
+          <td>2016 Las Vegas Rock & Roll</td>
+          <td>36:55</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td colspan="4">More to Come...</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="table table-hover" id="km5table">
+      <caption>A list of 5km races completed with finish time and overall place.</caption>
+      <thead>
+        <tr>
+          <th scope="col">Date (MM/DD/YY)</th>
+          <th scope="col">Race</th>
+          <th scope="col">Time (MM:SS)</th>
+          <th scope="col">Overall Place</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>8/09/18</td>
+          <td>2018 Gay Games 5KM</td>
+          <td>17:19</td>
+          <td>3 (1st Age Group)</td>
+        </tr>
+          <tr>
+            <td colspan="4">More to Come...</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table table-hover" id="othertable">
+        <caption>A list of other races completed with finish time and overall place.</caption>
+        <thead>
+          <tr>
+            <th scope="col">Date (MM/DD/YY)</th>
+            <th scope="col">Race (Distance)</th>
+            <th scope="col">Time (HH:MM:SS)</th>
+            <th scope="col">Overall Place</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>10/14/18</td>
+            <td>2018 20KM de Paris (20KM)</td>
+            <td>1:14:01</td>
+            <td>86</td>
+          </tr>
+          <tr>
+            <td>08/06/18</td>
+            <td>2018 Gay Games 1,500M (1,500M)</td>
+            <td>0:04:31</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>05/17/15</td>
+            <td>2015 Bay to Breakers (12KM)</td>
+            <td>0:44:36</td>
+            <td>123</td>
+          </tr>
+          <tr>
+            <td colspan="4">More to Come...</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+      <hr class="featurette-divider">
+    </div>
+
+
+
+    <!-- FOOTER -->
+    <footer class="container">
+      <p class="float-right"><a href="#">Back to top</a></p>
+      <p>&copy; 2020 Jeff Coulter. All Rights Reserved.</p>
+    </footer>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
